@@ -30,6 +30,8 @@
 	echo $aluno;
 	*/
 
+	/*
+	//Altera um usuário
 	$usuario = new Usuario();
 
 	$usuario->loadbyid("7");
@@ -37,6 +39,14 @@
 	$usuario->update("Aluno_1", "!@#$%¨&*");
 
 	echo $usuario;
+	*/
 
+	$usuario = new Usuario();
+
+	$usuario->loadbyid("5");
+
+	$usuario->delete();
+
+	echo $usuario;
 
  ?>
